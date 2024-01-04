@@ -17,12 +17,12 @@
 ## Установка
 Добавьте пакет в зависимости:
 ```
-composer require avlyalin/laravel-sberbank-acquiring
+composer require K-ALEKSANDR-V/laravel-sberbank-acquiring
 ```
 
 Опубликуйте файл настроек:
 ```
-php artisan vendor:publish --provider="Avlyalin\SberbankAcquiring\Providers\AcquiringServiceProvider" --tag=config
+php artisan vendor:publish --provider="ALEKSANDR\SberbankAcquiring\Providers\AcquiringServiceProvider" --tag=config
 ```
 
 Запустите миграции:
@@ -31,4 +31,4 @@ php artisan migrate
 ```
 
 ## Лицензия (License)
-The MIT License (MIT). Please see [License File](https://github.com/avlyalin/laravel-sberbank-acquiring) for more information.
+The MIT License (MIT). Please see [License File](https://github.com/K-ALEKSANDR-V/laravel-sberbank-acquiring/blob/main/LICENSE) for more information.
