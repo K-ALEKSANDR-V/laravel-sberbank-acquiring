@@ -36,12 +36,12 @@
     },
     "autoload": {
         "psr-4": {
-            "team-kotik\\SberbankAcquiring\\": "src"
+            "Aleksandr\\SberbankAcquiring\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "team-kotik\\SberbankAcquiring\\Tests\\": "tests"
+            "Aleksandr\\SberbankAcquiring\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -59,7 +59,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "team-kotik\\SberbankAcquiring\\Providers\\AcquiringServiceProvider"
+                "Aleksandr\\SberbankAcquiring\\Providers\\AcquiringServiceProvider"
             ]
         }
     }
