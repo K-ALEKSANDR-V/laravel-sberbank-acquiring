@@ -15,7 +15,7 @@ use Aleksandr\SberbankAcquiring\Models\AcquiringPayment;
 use Aleksandr\SberbankAcquiring\Models\AcquiringPaymentStatus;
 use Aleksandr\SberbankAcquiring\Repositories\AcquiringPaymentRepository;
 use Aleksandr\SberbankAcquiring\Repositories\AcquiringPaymentStatusRepository;
-use Illuminate\Database\Eloquent\Factory;
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\ServiceProvider;
 
 class AcquiringServiceProvider extends ServiceProvider
@@ -63,7 +63,7 @@ class AcquiringServiceProvider extends ServiceProvider
     private function registerEloquentFactories()
     {
         $factory = $this->app->make(Factory::class);
-        $factory->load(base_path('vendor/Aleksandr/laravel-sberbank-acquiring/database/factories'));
+        $factory->load(base_path('vendor/team-kotik/laravel-sberbank-acquiring/database/factories'));
     }
 
     /**
