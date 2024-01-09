@@ -1,5 +1,5 @@
 {
-    "name": "K-ALEKSANDR-V/laravel-sberbank-acquiring",
+    "name": "team-kotik/laravel-sberbank-acquiring",
     "description": "Provides functionality to interoperate with Sberbank acquiring system",
     "type": "library",
     "license": "MIT",
@@ -36,12 +36,12 @@
     },
     "autoload": {
         "psr-4": {
-            "K-ALEKSANDR-V\\SberbankAcquiring\\": "src"
+            "team-kotik\\SberbankAcquiring\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "K-ALEKSANDR-V\\SberbankAcquiring\\Tests\\": "tests"
+            "team-kotik\\SberbankAcquiring\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -59,7 +59,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "K-ALEKSANDR-V\\SberbankAcquiring\\Providers\\AcquiringServiceProvider"
+                "team-kotik\\SberbankAcquiring\\Providers\\AcquiringServiceProvider"
             ]
         }
     }

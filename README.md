@@ -17,7 +17,7 @@
 ## Установка
 Добавьте пакет в зависимости:
 ```
-composer require K-ALEKSANDR-V/laravel-sberbank-acquiring
+composer require team-kotik/laravel-sberbank-acquiring
 ```
 
 Опубликуйте файл настроек:
@@ -31,4 +31,4 @@ php artisan migrate
 ```
 
 ## Лицензия (License)
-The MIT License (MIT). Please see [License File](https://github.com/K-ALEKSANDR-V/laravel-sberbank-acquiring/blob/main/LICENSE) for more information.
+The MIT License (MIT). Please see [License File](https://github.com/team-kotik/laravel-sberbank-acquiring/blob/main/LICENSE) for more information.
