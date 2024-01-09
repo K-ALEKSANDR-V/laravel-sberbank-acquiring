@@ -15,7 +15,7 @@ use Aleksandr\SberbankAcquiring\Models\AcquiringPayment;
 use Aleksandr\SberbankAcquiring\Models\AcquiringPaymentStatus;
 use Aleksandr\SberbankAcquiring\Repositories\AcquiringPaymentRepository;
 use Aleksandr\SberbankAcquiring\Repositories\AcquiringPaymentStatusRepository;
-use Illuminate\Database\Eloquent\Factories\Factory;
+//use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\ServiceProvider;
 
 class AcquiringServiceProvider extends ServiceProvider
@@ -37,7 +37,7 @@ class AcquiringServiceProvider extends ServiceProvider
 
         $this->registerBindings();
 
-        $this->registerEloquentFactories();
+//        $this->registerEloquentFactories();
 
         $this->registerCommands();
     }
@@ -60,11 +60,11 @@ class AcquiringServiceProvider extends ServiceProvider
      *
      * @throws \Illuminate\Contracts\Container\BindingResolutionException
      */
-    private function registerEloquentFactories()
-    {
-        $factory = $this->app->make(Factory::class);
-        $factory->load(base_path('vendor/team-kotik/laravel-sberbank-acquiring/database/factories'));
-    }
+//    private function registerEloquentFactories()
+//    {
+//        $factory = $this->app->make(Factory::class);
+//        $factory->load(base_path('vendor/team-kotik/laravel-sberbank-acquiring/database/factories'));
+//    }
 
     /**
      * Регистрация биндингов
