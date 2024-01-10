@@ -22,7 +22,12 @@ composer require team-kotik/laravel-sberbank-acquiring
 
 Опубликуйте файл настроек:
 ```
-php artisan vendor:publish --provider="ALEKSANDR\SberbankAcquiring\Providers\AcquiringServiceProvider" --tag=config
+php artisan vendor:publish --provider="Aleksandr\SberbankAcquiring\Providers\AcquiringServiceProvider" --tag=config
+```
+
+Опубликуйте файлы миграций:
+```
+php artisan vendor:publish --provider="Aleksandr\SberbankAcquiring\Providers\AcquiringServiceProvider" --tag=migrations
 ```
 
 Запустите миграции:
