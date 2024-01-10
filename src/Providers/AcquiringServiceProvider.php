@@ -30,39 +30,39 @@ class AcquiringServiceProvider extends ServiceProvider
     public $migrations = [
         [
             'table' => 'payment_operation_types',
-            'file' => 'create_acquiring_payment_operation_types_table.php.stub'
+            'file' => 'create_acquiring_payment_operation_types_table.php'
         ],
         [
             'table' => 'payment_statuses',
-            'file' => 'create_acquiring_payment_statuses_table.php.stub'
+            'file' => 'create_acquiring_payment_statuses_table.php'
         ],
         [
             'table' => 'payment_systems',
-            'file' => 'create_acquiring_payment_systems_table.php.stub'
+            'file' => 'create_acquiring_payment_systems_table.php'
         ],
         [
             'table' => 'payments',
-            'file' => 'create_acquiring_payments_table.php.stub'
+            'file' => 'create_acquiring_payments_table.php'
         ],
         [
             'table' => 'payment_operations',
-            'file' => 'create_acquiring_payment_operations_table.php.stub'
+            'file' => 'create_acquiring_payment_operations_table.php'
         ],
         [
             'table' => 'sberbank_payments',
-            'file' => 'create_acquiring_sberbank_payments_table.php.stub'
+            'file' => 'create_acquiring_sberbank_payments_table.php'
         ],
         [
             'table' => 'apple_pay_payments',
-            'file' => 'create_acquiring_apple_pay_payments_table.php.stub'
+            'file' => 'create_acquiring_apple_pay_payments_table.php'
         ],
         [
             'table' => 'samsung_pay_payments',
-            'file' => 'create_acquiring_samsung_pay_payments_table.php.stub'
+            'file' => 'create_acquiring_samsung_pay_payments_table.php'
         ],
         [
             'table' => 'google_pay_payments',
-            'file' => 'create_acquiring_google_pay_payments_table.php.stub'
+            'file' => 'create_acquiring_google_pay_payments_table.php'
         ],
     ];
 
