@@ -30,39 +30,39 @@ class AcquiringServiceProvider extends ServiceProvider
     public $migrations = [
         [
             'table' => 'payment_operation_types',
-            'file' => 'create_acquiring_payment_operation_types_table.php.stub'
+            'file' => 'create_acquiring_payment_operation_types_table.php'
         ],
         [
             'table' => 'payment_statuses',
-            'file' => 'create_acquiring_payment_statuses_table.php.stub'
+            'file' => 'create_acquiring_payment_statuses_table.php'
         ],
         [
             'table' => 'payment_systems',
-            'file' => 'create_acquiring_payment_systems_table.php.stub'
+            'file' => 'create_acquiring_payment_systems_table.php'
         ],
         [
             'table' => 'payments',
-            'file' => 'create_acquiring_payments_table.php.stub'
+            'file' => 'create_acquiring_payments_table.php'
         ],
         [
             'table' => 'payment_operations',
-            'file' => 'create_acquiring_payment_operations_table.php.stub'
+            'file' => 'create_acquiring_payment_operations_table.php'
         ],
         [
             'table' => 'sberbank_payments',
-            'file' => 'create_acquiring_sberbank_payments_table.php.stub'
+            'file' => 'create_acquiring_sberbank_payments_table.php'
         ],
         [
             'table' => 'apple_pay_payments',
-            'file' => 'create_acquiring_apple_pay_payments_table.php.stub'
+            'file' => 'create_acquiring_apple_pay_payments_table.php'
         ],
         [
             'table' => 'samsung_pay_payments',
-            'file' => 'create_acquiring_samsung_pay_payments_table.php.stub'
+            'file' => 'create_acquiring_samsung_pay_payments_table.php'
         ],
         [
             'table' => 'google_pay_payments',
-            'file' => 'create_acquiring_google_pay_payments_table.php.stub'
+            'file' => 'create_acquiring_google_pay_payments_table.php'
         ],
     ];
 
@@ -99,9 +99,9 @@ class AcquiringServiceProvider extends ServiceProvider
         $date = date('Y_m_d_His', time());
         foreach ($this->migrations as $index => $migration) {
             $tableName = $this->getTableName($migration['table']);
-            $timestamp = substr($date, 0, -1).$index;
+            $timestamp = substr($date, 0, -1) . $index;
             $this->publishes([
-                __DIR__.'/../../database/migrations/'.$migration['file'] => database_path("/migrations/{$timestamp}_create_{$tableName}_table.php"),
+                __DIR__ . '/../../database/migrations/' . $migration['file'] => database_path("/migrations/{$timestamp}_create_{$tableName}_table.php"),
             ], 'migrations');
         }
     }
